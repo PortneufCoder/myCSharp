@@ -14,9 +14,11 @@ namespace Hello
             Console.WriteLine("How much sleep did you get last night?");
             int hoursOfSleep = int.Parse(Console.ReadLine()); // int.parse will convert the number to a string
 
+            Console.WriteLine("The health ministry recommends 12 hours of sommeil! Did you meet that?");
+            string requiredSleep = Console.ReadLine();
 
            
-            if ( hoursOfSleep > 8 )
+            if ( hoursOfSleep > 8 && requiredSleep == "yes" )
             {
                 Console.WriteLine("You are well rested!");
             }
