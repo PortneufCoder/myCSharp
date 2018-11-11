@@ -8,9 +8,9 @@ namespace Hello
         {
             Console.WriteLine("Your name is:");
             
-            string name = Console.ReadLine(); // typed-lang. must declare its a string. This holds the input in a var
+            string name = Console.ReadLine(); // typed-lang. must declare this var is a string
 
-            Console.WriteLine("Hello, " + name); //strings need double quotes
+            Console.WriteLine("Hello, " + name); // strings need double quotes
             Console.WriteLine("How much sleep did you get last night?");
             int hoursOfSleep = int.Parse(Console.ReadLine()); // int.parse will convert the number to a string
 
