@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,9 +11,20 @@ namespace Grades
     {
         static void Main(string[] args)
         {
+
+            GradeBook g1 = new GradeBook();
+            GradeBook g2 = g1;
+
+            g1.Name = "Victor's grade book";
+            Console.WriteLine(g2.Name);
+               
+            /*
+            SpeechSynthesizer synth = new SpeechSynthesizer(); // added an assembly reference for speech synthesizing
+            synth.Speak("Yo! This is a grade book program");
+
             GradeBook book = new GradeBook(); // instantiating a new GradeBook object
             book.AddGrade(90);
-            book.AddGrade(89.5f); // the 'f specifeis to the compiler that this is a float'
+            book.AddGrade(89.5f); // the 'f specifies to the compiler that this is a float'
             book.AddGrade(75);
 
 
@@ -20,7 +32,7 @@ namespace Grades
             Console.WriteLine(stats.AverageGrade);
             Console.WriteLine(stats.HighestGrade);
             Console.WriteLine(stats.LowestGrade);
-
+            */
 
 
 

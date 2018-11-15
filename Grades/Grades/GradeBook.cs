@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Grades  // this is now a class thats part of the project
                     // classes are blueprints for creating objs
 {
-    class GradeBook
+     public class GradeBook
     {
 
         public GradeBook() // ctor tab twice creates a new constructor
@@ -27,7 +27,7 @@ namespace Grades  // this is now a class thats part of the project
                 stats.LowestGrade = Math.Min(grade, stats.LowestGrade);
                 sum += grade;
             }
-            stats.AverageGrade = sum / grades.Count;
+            stats.AverageGrade = sum / grades.Count; // divide the sum of all grades by the number of grades
             return stats;
         }
         public void AddGrade(float grade) // new class for the project
@@ -35,6 +35,8 @@ namespace Grades  // this is now a class thats part of the project
             grades.Add(grade);
 
         }
+
+        public string Name;
 
         private List<float> grades;  // this list will hold 0 or more floating point numbers
     }
