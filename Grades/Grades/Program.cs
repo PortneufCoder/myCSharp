@@ -11,14 +11,8 @@ namespace Grades
     {
         static void Main(string[] args)
         {
-
-            GradeBook g1 = new GradeBook();
-            GradeBook g2 = g1;
-
-            g1.Name = "Victor's grade book";
-            Console.WriteLine(g2.Name);
-               
-            /*
+            
+           
             SpeechSynthesizer synth = new SpeechSynthesizer(); // added an assembly reference for speech synthesizing
             synth.Speak("Yo! This is a grade book program");
 
@@ -32,7 +26,7 @@ namespace Grades
             Console.WriteLine(stats.AverageGrade);
             Console.WriteLine(stats.HighestGrade);
             Console.WriteLine(stats.LowestGrade);
-            */
+            
 
 
 
