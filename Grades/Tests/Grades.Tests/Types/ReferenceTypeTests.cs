@@ -10,6 +10,24 @@ namespace Grades.Tests.Types // Testing referencing of types e.g reassigning var
     [TestClass]
     public class TypeTests  
     {
+
+        [TestMethod]
+        public void UsingArrays()
+        {
+            float[] grades;
+            grades = new float[3];
+
+            AddGrades(grades);
+
+            Assert.AreEqual(89.1f, grades[1]); // passes since an array is a reference type. test qould failt if we created a new array in the private method.
+        }
+
+        private void AddGrades(float[] grades)
+        {
+            
+            grades[1] = 89.1f;
+        }
+
         [TestMethod]
         public void ValueTypesPassByValue()
         {
