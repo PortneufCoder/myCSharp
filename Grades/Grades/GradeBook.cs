@@ -36,8 +36,21 @@ namespace Grades  // this is now a class thats part of the project
 
         }
 
-        public string Name;
-
+        public string Name // this changes this method to a property. This is an auto-implemented property
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                if ( !String.IsNullOrEmpty(value))
+                {
+                    _name = value;
+                }
+            } 
+        } // public member capitalized. This is a field that can be used elsewhere, like book.Name
+        private string _name;
         private List<float> grades;  // this list will hold 0 or more floating point numbers
     }
 }
