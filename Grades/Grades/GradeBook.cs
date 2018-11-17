@@ -12,6 +12,7 @@ namespace Grades  // this is now a class thats part of the project
 
         public GradeBook() // ctor tab twice creates a new constructor
         {
+            _name = "Sans nom";
             grades = new List<float>();
         }
 
@@ -44,12 +45,22 @@ namespace Grades  // this is now a class thats part of the project
             }
             set
             {
-                if ( !String.IsNullOrEmpty(value))
+                if ( !String.IsNullOrEmpty(value) ) //this code prevents a user from entering an empty value.
                 {
+                    if ( _name != value )
+                    {
+                        NameChanged(_name, value);
+                    };
+
                     _name = value;
                 }
+
+
             } 
         } // public member capitalized. This is a field that can be used elsewhere, like book.Name
+
+        public NameChangedDelegate NameChanged;
+
         private string _name;
         private List<float> grades;  // this list will hold 0 or more floating point numbers
     }

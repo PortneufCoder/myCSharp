@@ -16,7 +16,10 @@ namespace Grades
             //SpeechSynthesizer synth = new SpeechSynthesizer(); // added an assembly reference for speech synthesizing
             //synth.Speak("Yo! This is a grade book program");
 
-            GradeBook book = new GradeBook(); // instantiating a new GradeBook object
+            GradeBook book = new GradeBook(); // instantiating a new GradeBook 
+
+            book.NameChanged = new NameChangedDelegate(OnNameChanged);
+
             book.Name = "Victor's Grade Book!";
            
             book.AddGrade(90);
@@ -30,6 +33,11 @@ namespace Grades
             WriteResult("Highest", (int)stats.HighestGrade); // type casting... we tell compiler to convert this value to an int
             WriteResult("Lowest", stats.LowestGrade);
 
+        }
+
+        static void OnNameChanged(string existingName, string newName)
+        {
+            Console.WriteLine($"Gradebook's name switching from {existingName} to {newName}");
         }
 
         static void WriteResult(string description, int result) // helper method. This allows me to output better data from my class above
