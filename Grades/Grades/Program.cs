@@ -17,10 +17,7 @@ namespace Grades
             //synth.Speak("Yo! This is a grade book program");
 
             GradeBook book = new GradeBook(); // instantiating a new GradeBook 
-
-            book.NameChanged = new NameChangedDelegate(OnNameChanged);
-
-            book.Name = "Victor's Grade Book!";
+             
            
             book.AddGrade(90);
             book.AddGrade(89.5f); // the 'f specifies to the compiler that this is a float'
@@ -28,21 +25,17 @@ namespace Grades
 
 
             GradeStatistics stats = book.ComputeStatistics();
-            Console.WriteLine(book.Name);
+            
             WriteResult("Average", stats.AverageGrade);
-            WriteResult("Highest", (int)stats.HighestGrade); // type casting... we tell compiler to convert this value to an int
+            WriteResult("Highest", stats.HighestGrade); // type casting... we tell compiler to convert this value to an int
             WriteResult("Lowest", stats.LowestGrade);
+            WriteResult("Grade", stats.LetterGrade);
 
         }
 
-        static void OnNameChanged(string existingName, string newName)
+        static void WriteResult(string description, string result) // helper method
         {
-            Console.WriteLine($"Gradebook's name switching from {existingName} to {newName}");
-        }
-
-        static void WriteResult(string description, int result) // helper method. This allows me to output better data from my class above
-        {
-            Console.WriteLine(description + ": " + result);
+            Console.WriteLine("{0}: {1}", description, result); // bit like template-literals in js
         }
 
         static void WriteResult(string description, float result) // helper method
