@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,15 @@ namespace Grades  // this is now a class thats part of the project
             stats.AverageGrade = sum / grades.Count; // divide the sum of all grades by the number of grades
             return stats;
         }
+
+        public void WriteGrades(TextWriter destination)
+        {
+            for (int i = grades.Count; i > 0; i--) // we see the grades in reverse order, starting at grades.count(3 : index of 2), then decrement i each time
+            {
+                destination.WriteLine(grades[i-1]);
+            }
+        }
+
         public void AddGrade(float grade) // new class for the project
         {
             grades.Add(grade);

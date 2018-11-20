@@ -19,6 +19,7 @@ namespace Grades
             book.AddGrade(90);
             book.AddGrade(89.5f); // the 'f specifies to the compiler that this is a float'
             book.AddGrade(75);
+            book.WriteGrades(Console.Out); // console.out refers to the output screen
 
 
             GradeStatistics stats = book.ComputeStatistics();
