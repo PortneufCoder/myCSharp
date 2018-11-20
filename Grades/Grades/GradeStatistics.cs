@@ -15,6 +15,37 @@ namespace Grades
             LowestGrade = float.MaxValue;
         }
 
+        public string Description
+        {
+            get
+            {
+                string result;
+                switch (LetterGrade)
+                {
+                    case "A":
+                        result = "Amazing!";
+                        break; // the use of 'break' allows us to add all the statements within the same block
+                    case "B":
+                        result = "Goodish";
+                        break;
+                    case "C":
+                        result = "Average";
+                        break;
+                    case "D":
+                        result = "What the heck did your parents pay for?";
+                        break;
+                    case "F":
+                        result = "Crap. FullStop";
+                        break;
+                    default:
+                        result = "Banjaxed! :(";
+                        break;
+                        
+                }
+                return result;
+            }
+        }
+
         public string LetterGrade
         {
             get

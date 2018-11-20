@@ -11,14 +11,11 @@ namespace Grades
     {
         static void Main(string[] args)
         {
-            
-           
             //SpeechSynthesizer synth = new SpeechSynthesizer(); // added an assembly reference for speech synthesizing
             //synth.Speak("Yo! This is a grade book program");
 
             GradeBook book = new GradeBook(); // instantiating a new GradeBook 
              
-           
             book.AddGrade(90);
             book.AddGrade(89.5f); // the 'f specifies to the compiler that this is a float'
             book.AddGrade(75);
@@ -29,7 +26,7 @@ namespace Grades
             WriteResult("Average", stats.AverageGrade);
             WriteResult("Highest", stats.HighestGrade); // type casting... we tell compiler to convert this value to an int
             WriteResult("Lowest", stats.LowestGrade);
-            WriteResult("Grade", stats.LetterGrade);
+            WriteResult(stats.Description, stats.LetterGrade);
 
         }
 
