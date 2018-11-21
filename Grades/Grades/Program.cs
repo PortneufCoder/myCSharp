@@ -15,7 +15,10 @@ namespace Grades
             //synth.Speak("Yo! This is a grade book program");
 
             GradeBook book = new GradeBook(); // instantiating a new GradeBook 
-             
+            Console.WriteLine("Provide a GradeBook name...");
+            string GradeName = Console.ReadLine();
+
+            
             book.AddGrade(90);
             book.AddGrade(89.5f); // the 'f specifies to the compiler that this is a float'
             book.AddGrade(75);
