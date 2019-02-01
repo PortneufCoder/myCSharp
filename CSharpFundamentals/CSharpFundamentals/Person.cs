@@ -8,7 +8,9 @@ namespace CSharpFundamentals
         public string FirstName;
         public string LastName;
 
-        public void Introduce()
+        public int Age;
+
+        public void Introduce()  
         {
             Console.WriteLine("My name is " + FirstName + " " + LastName);
         }
