@@ -29,6 +29,23 @@ namespace CSharpFundamentals
 
             int[] myArray = new int[4] { 5, 7, 9, 12 };
             Console.WriteLine(myArray[1]);
+
+            var season = Season.Autumn;
+
+            switch (season)
+            {
+                case Season.Autumn:
+                case Season.Spring:
+                    Console.WriteLine("We got a promotion");
+                    break;
+
+                default:
+                    Console.WriteLine("This is a weird season");
+                    break;
+
+
+            }
+
         }
 
         public static void Increment(int number) // this number here is another spot in memory
@@ -40,5 +57,7 @@ namespace CSharpFundamentals
         {
             person.Age += 10;
         }
+
+        
     }
 }
