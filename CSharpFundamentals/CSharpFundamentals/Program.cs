@@ -37,6 +37,9 @@ namespace CSharpFundamentals
             var Exercise2 = new Exercise2();
             Exercise2.BiggestNumber();
 
+            var ImageExercise = new ImageDimensions();
+            ImageExercise.Image();
+
             switch (season)
             {
                 case Season.Autumn:
