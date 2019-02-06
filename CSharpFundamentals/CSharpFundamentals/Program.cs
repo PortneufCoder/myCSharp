@@ -31,6 +31,11 @@ namespace CSharpFundamentals
             Console.WriteLine(myArray[1]);
 
             var season = Season.Autumn;
+            var Exercise1 = new Exercise1();
+            Exercise1.MagicNumber();
+
+            var Exercise2 = new Exercise2();
+            Exercise2.BiggestNumber();
 
             switch (season)
             {
@@ -44,7 +49,9 @@ namespace CSharpFundamentals
                     break;
 
 
+                   
             }
+
 
         }
 

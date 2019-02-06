@@ -16,6 +16,6 @@ namespace CSharpFundamentals
 
     public class Conditionals
     {
-        public int VerificationNumber = 2500;
+        public int VerificationNumber = 9;
     }
 }
