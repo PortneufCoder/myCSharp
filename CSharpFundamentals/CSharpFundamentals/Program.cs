@@ -40,6 +40,9 @@ namespace CSharpFundamentals
             var ImageExercise = new ImageDimensions();
             ImageExercise.Image();
 
+            var DriverLicense = new SpeedCamera();
+            DriverLicense.CalculateSpeedLimit();
+
             switch (season)
             {
                 case Season.Autumn:
