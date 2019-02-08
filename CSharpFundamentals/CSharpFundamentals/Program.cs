@@ -1,6 +1,7 @@
 ﻿using System;
 using CSharpFundamentals;
 using CSharpFundamentals.Math;
+using CSharpFundamentals.Games;
 
 
 namespace CSharpFundamentals
@@ -44,6 +45,9 @@ namespace CSharpFundamentals
 
             var getRandom = new LearningRandom();
             getRandom.RandomClass();
+
+            var enterCount = new Counts();
+            enterCount.getTheCount();
 
             switch (season)
             {

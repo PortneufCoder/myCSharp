@@ -11,5 +11,16 @@ namespace CSharpFundamentals.Math
 
         }
 
+        public void Divisible()
+        {
+            var randomNumber = new Random();
+            var endNumber = (int)randomNumber.Next(1, 100);
+
+            for (var i = 0; i < endNumber; i++)
+            {
+               
+            }
+        }
+
     }
 }
