@@ -17,7 +17,6 @@ namespace CSharpFundamentals
             MakeOld(person);
             Console.WriteLine(person.Age);
 
-
             var victor = new Person();
             victor.FirstName = "Albert";
             victor.LastName = "Einstein";
@@ -42,6 +41,9 @@ namespace CSharpFundamentals
 
             var DriverLicense = new SpeedCamera();
             DriverLicense.CalculateSpeedLimit();
+
+            var getRandom = new LearningRandom();
+            getRandom.RandomClass();
 
             switch (season)
             {
