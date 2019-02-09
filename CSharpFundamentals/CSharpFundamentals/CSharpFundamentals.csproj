@@ -47,6 +47,7 @@
     <Compile Include="Exercise1.cs" />
     <Compile Include="Exercise2.cs" />
     <Compile Include="Games\Counts.cs" />
+    <Compile Include="Games\GetFactorial.cs" />
     <Compile Include="ImageDimensions.cs" />
     <Compile Include="Math\Calculator.cs" />
     <Compile Include="Person.cs" />
