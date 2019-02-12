@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using CSharpFundamentals;
 using CSharpFundamentals.Math;
 using CSharpFundamentals.Games;
@@ -48,6 +49,32 @@ namespace CSharpFundamentals
 
             var enterCount = new Counts();
             enterCount.getTheCount();
+
+            // Length()
+            var numbers = new[] {3, 7, 9, 15, 24, 18};
+            Console.WriteLine("Length: " + numbers.Length);
+
+            // Indexof()
+            var index = Array.IndexOf(numbers, 9);
+            Console.WriteLine("Index of 9 " + index );
+
+            // Clear()
+            Array.Clear(numbers, 0, 5);
+            Console.WriteLine("Effect of Clear()");
+
+            foreach (var n in numbers)
+            {
+                Console.WriteLine(n);
+            }
+
+            // Copy()
+            int[] anotherArray = new int[3];
+            Array.Copy(numbers, anotherArray, 3);
+
+            Console.WriteLine("Effect of Copy()");
+
+            foreach (var n in anotherArray)
+                Console.WriteLine(n);
 
             switch (season)
             {
