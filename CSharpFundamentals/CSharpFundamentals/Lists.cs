@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpFundamentals
 {
-    class Lists
+    public class Lists
     {
         // Lists in C# are arrays with a dynamic length
         public void LearnList()
@@ -19,9 +19,16 @@ namespace CSharpFundamentals
 
             foreach (var number in listItems)
             {
-                Console.WriteLine(number);
+                Console.WriteLine(number); // 1,2,3,4,2,5,6,7
             }
 
+            for (var i = 0; i < listItems.Count; i++)
+            {
+                if (listItems[i] == 1)
+                {
+                    listItems.Remove(listItems[i]); // remove all occurrences of 1 in the List
+                }
+            }
 
         }
     }
