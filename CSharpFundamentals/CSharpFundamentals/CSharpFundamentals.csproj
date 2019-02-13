@@ -46,6 +46,7 @@
     <Compile Include="Conditionals.cs" />
     <Compile Include="Exercise1.cs" />
     <Compile Include="Exercise2.cs" />
+    <Compile Include="Games\CheckGuessNumber.cs" />
     <Compile Include="Games\Counts.cs" />
     <Compile Include="Games\GetFactorial.cs" />
     <Compile Include="ImageDimensions.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Random.cs" />
+    <Compile Include="ReverseNameExercise.cs" />
     <Compile Include="SpeedCamera.cs" />
   </ItemGroup>
   <ItemGroup>

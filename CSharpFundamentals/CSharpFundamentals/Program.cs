@@ -50,6 +50,9 @@ namespace CSharpFundamentals
             var enterCount = new Counts();
             enterCount.getTheCount();
 
+            var reverseLogic = new ReverseNameExercise();
+            reverseLogic.ReverseName();
+
             // Length()
             var numbers = new[] {3, 7, 9, 15, 24, 18};
             Console.WriteLine("Length: " + numbers.Length);
