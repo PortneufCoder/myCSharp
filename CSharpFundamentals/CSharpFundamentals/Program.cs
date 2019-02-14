@@ -11,6 +11,9 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
+            var guessingGame = new CheckGuessNumber();
+            guessingGame.AllGuessLogic();
+            /*
             int number = 1; // held in one spot in memory since its a value type
             Increment(number);
             Console.WriteLine(number); // 1
@@ -94,9 +97,9 @@ namespace CSharpFundamentals
                    
             }
 
-
+    */
         }
-
+        /*
         public static void Increment(int number) // this number here is another spot in memory
         {
             number += 10;
@@ -106,7 +109,7 @@ namespace CSharpFundamentals
         {
             person.Age += 10;
         }
-
+        */
         
     }
 }
