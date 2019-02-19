@@ -21,10 +21,10 @@ namespace CSharpFundamentals.Games
 
                if (numbers.Contains(number))
                {
-                   Console.WriteLine("You've already entered " + number);
-                   continue;
+                   Console.WriteLine("You've already entered: " + number);
+                   continue; //re-do the guess : go up
                }
-               numbers.Add(number);
+               numbers.Add(number); // add guessed numbers to the numbers List
            }
 
            numbers.Sort();

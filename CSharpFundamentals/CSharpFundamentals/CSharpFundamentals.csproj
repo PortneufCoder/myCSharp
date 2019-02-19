@@ -44,11 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conditionals.cs" />
+    <Compile Include="DatesTimes\DateTime.cs" />
     <Compile Include="Exercise1.cs" />
     <Compile Include="Exercise2.cs" />
     <Compile Include="Games\CheckGuessNumber.cs" />
     <Compile Include="Games\Counts.cs" />
     <Compile Include="Games\GetFactorial.cs" />
+    <Compile Include="Games\UniqueNumbers.cs" />
     <Compile Include="ImageDimensions.cs" />
     <Compile Include="Lists.cs" />
     <Compile Include="Math\Calculator.cs" />
@@ -62,5 +64,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
