@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpFundamentals.DatesTimes
+namespace WorkingWithStrings
 {
-    class DateTime
+    class StringDemo
     {
-
     }
 }

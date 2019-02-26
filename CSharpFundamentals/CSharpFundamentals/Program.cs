@@ -13,7 +13,7 @@ namespace CSharpFundamentals
         {
             var guessingGame = new CheckGuessNumber();
             guessingGame.AllGuessLogic();
-            /*
+            /* 
             int number = 1; // held in one spot in memory since its a value type
             Increment(number);
             Console.WriteLine(number); // 1
