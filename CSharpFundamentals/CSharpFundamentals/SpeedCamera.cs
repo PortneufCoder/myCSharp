@@ -13,7 +13,7 @@ namespace CSharpFundamentals
             Console.WriteLine("Now enter the speed of your car: ");
             var carSpeed = Convert.ToInt32(Console.ReadLine());
 
-            int demeritPoints = 0;
+            var demeritPoints = 0;
 
             if (carSpeed < speedLimit)
             {
