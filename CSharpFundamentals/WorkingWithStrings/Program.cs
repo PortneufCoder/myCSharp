@@ -35,6 +35,11 @@ namespace WorkingWithStrings
             var summary = StringUtility.SummarizeText(sentence);
             Console.WriteLine(summary);
 
+            // Testing StringBuilder - allows you to manipulate strings, BUT gives no search functions.
+
+            var builder = new StringBuilder();
+            builder.Append('+', 5).AppendLine().Append('-', 5); // give me plus signs; 5 of them.
+
         }
 
 
