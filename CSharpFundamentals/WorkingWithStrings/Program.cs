@@ -29,8 +29,14 @@ namespace WorkingWithStrings
             var str = "35";
             var age = Convert.ToByte(str);
 
+            // Problem: summarizing text
+
+            var sentence = "Such a very very extremely awesomely outstandingly long boring shoot me in the head text!";
+            var summary = StringUtility.SummarizeText(sentence);
+            Console.WriteLine(summary);
 
         }
+
 
     }
 }
