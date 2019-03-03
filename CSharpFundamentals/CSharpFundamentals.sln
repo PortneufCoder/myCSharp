@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpFundamentals", "CShar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithStrings", "WorkingWithStrings\WorkingWithStrings.csproj", "{4A431EBC-A86B-465A-B446-155BB093C1EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextExercises", "TextExercises\TextExercises.csproj", "{2FE9CC94-DF72-4330-BF54-576E507A061D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4A431EBC-A86B-465A-B446-155BB093C1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A431EBC-A86B-465A-B446-155BB093C1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A431EBC-A86B-465A-B446-155BB093C1EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE9CC94-DF72-4330-BF54-576E507A061D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE9CC94-DF72-4330-BF54-576E507A061D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE9CC94-DF72-4330-BF54-576E507A061D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE9CC94-DF72-4330-BF54-576E507A061D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
